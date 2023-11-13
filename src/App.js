@@ -1,23 +1,37 @@
-import logo from './logo.svg';
+import "bootstrap/dist/css/bootstrap.min.css"
+import "bootstrap/dist/js/bootstrap.bundle.min.js"
+import { BiChat, BiFile, BiGrid, BiMessage } from "react-icons/bi"
 import './App.css';
+import Sidebar from "./Sidebar";
+import Header from "./Header";
+import Corps from "./Corps";
 
 function App() {
+
+  const menuItems = [
+    {icon: <BiGrid />, item: "overview"}, 
+    {icon: <BiFile />, item: "project"}, 
+    {icon: <BiMessage />, item: "meeting"}, 
+    {icon: <BiMessage />, item: "custumers"},  
+    {icon: <BiMessage />, item: "tickets"}, 
+    {icon: <BiChat />, item: "message"}, 
+    {icon: <BiMessage />, item: "custumers"}, 
+    {icon: <BiMessage />, item: "profile"}
+    ]
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="App container-fluid">
+      <div className="row">
+        <div className="col-3 col-md-2 h-100 position-fixed bg-white" id="sidebar">
+          <Sidebar menuItems = {menuItems}/>
+        </div>  
+        <div className="container col-9 col-md-10 offset-3 offset-md-2">
+          <Header />
+          <div className="container mt-3" id='corps'>
+            <Corps />
+          </div>
+        </div>
+      </div>  
     </div>
   );
 }
