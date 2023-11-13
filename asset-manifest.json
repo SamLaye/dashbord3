@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/dashbord3/static/css/main.05d400c4.css",
+    "main.js": "/dashbord3/static/js/main.e05ad6a5.js",
+    "static/media/cover_2.jpg": "/dashbord3/static/media/cover_2.4ebf715d15edac2d91f1.jpg",
+    "static/media/75_percent.png": "/dashbord3/static/media/75_percent.90faa27a636c82d9642a.png",
+    "static/media/profil.png": "/dashbord3/static/media/profil.3f1f758f2122862d0512.png",
+    "static/media/75_percentOrange.png": "/dashbord3/static/media/75_percentOrange.8a7e45a91ba7a28337bd.png",
+    "static/media/logo.png": "/dashbord3/static/media/logo.2047b76bba28d9f95df3.png",
+    "index.html": "/dashbord3/index.html",
+    "main.05d400c4.css.map": "/dashbord3/static/css/main.05d400c4.css.map",
+    "main.e05ad6a5.js.map": "/dashbord3/static/js/main.e05ad6a5.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.05d400c4.css",
+    "static/js/main.e05ad6a5.js"
+  ]
+}
